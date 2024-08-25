@@ -1,0 +1,6 @@
+@forward 'vuetify/settings' with (
+  $button-height: 24px,
+  $button-font-size: 12px,
+  $heading-font-family: unquote('Montserrat, sans-serif'),
+  $body-font-family: 'Montserrat'
+);

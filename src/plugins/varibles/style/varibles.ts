@@ -1,0 +1,5 @@
+export const STYLE_VARIBLES = {
+  NAVIGATION: {
+    DEFAULT_RAIL_WIDTH: 84
+  }
+}
