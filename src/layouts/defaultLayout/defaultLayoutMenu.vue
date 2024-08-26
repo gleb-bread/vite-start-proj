@@ -11,8 +11,9 @@ const rail = ref<boolean>(true)
     :rail="rail"
     :rail-width="$STYLE_VARIBLES.NAVIGATION.DEFAULT_RAIL_WIDTH"
   >
+    <desktop-menu-list></desktop-menu-list>
     <v-list>
-      <v-list-item><defaultLayoutMenuBtn></defaultLayoutMenuBtn></v-list-item>
+      <v-list-item link><defaultLayoutMenuBtn /></v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>

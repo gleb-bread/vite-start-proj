@@ -4,6 +4,8 @@ import { createVuetify } from 'vuetify'
 import { Themes } from './themes'
 import { THEMES } from './themes.enum'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import { Aliases } from './aliases'
+import { Default } from './defaults'
 
 export default createVuetify({
   icons: {
@@ -17,5 +19,9 @@ export default createVuetify({
   theme: {
     defaultTheme: THEMES.DEFAULT,
     themes: Themes
-  }
+  },
+
+  aliases: Aliases,
+
+  defaults: Default
 })
