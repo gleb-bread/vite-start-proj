@@ -8,6 +8,7 @@ export const Default: {
     class: ['desktop-menu-list']
   },
   [AliasesUI.DesktopMenuListItem]: {
-    class: ['desktop-menu-list-item']
+    class: ['desktop-menu-list-item'],
+    link: true
   }
 }

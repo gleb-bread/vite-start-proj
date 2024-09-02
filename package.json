@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "axios": "^1.7.7",
+    "cross-env": "^7.0.3",
     "normalize.css": "^8.0.1",
     "pinia": "^2.1.7",
     "vite-plugin-vuetify": "^2.0.4",

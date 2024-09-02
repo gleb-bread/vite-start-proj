@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import defaultLayoutMenuBtn from './defaultLayoutMenu/defaultLayoutMenuBtn.vue'
 
 const rail = ref<boolean>(true)
+const openMobileMenu = ref<boolean>(false)
 </script>
 
 <template>
@@ -11,9 +12,10 @@ const rail = ref<boolean>(true)
     :rail="rail"
     :rail-width="$STYLE_VARIBLES.NAVIGATION.DEFAULT_RAIL_WIDTH"
   >
-    <desktop-menu-list></desktop-menu-list>
-    <v-list>
-      <v-list-item link><defaultLayoutMenuBtn /></v-list-item>
-    </v-list>
+    <desktop-menu-list :bg-color="$STYLE_VARIBLES.COLOR.PRIMARY">
+      <desktop-menu-list-item>
+        <default-layout-menu-btn v-model:model-value="openMobileMenu"></default-layout-menu-btn>
+      </desktop-menu-list-item>
+    </desktop-menu-list>
   </v-navigation-drawer>
 </template>

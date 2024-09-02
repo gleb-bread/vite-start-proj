@@ -1,10 +1,6 @@
-import { AliasesUI } from './aliases/aliases.enum'
-import * as Components from 'vuetify/components'
+import { IAliases } from './aliases/aliases'
 
-interface _CustomComponents {
-  [AliasesUI.DesktopMenuList]: typeof Components.VList
-  [AliasesUI.DesktopMenuListItem]: typeof Components.VListItem
-}
+interface _CustomComponents extends IAliases {}
 
 declare module 'vue' {
   export interface GlobalComponents extends _CustomComponents {}

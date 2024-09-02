@@ -1,0 +1,1 @@
+export { RightDTO } from './right'
